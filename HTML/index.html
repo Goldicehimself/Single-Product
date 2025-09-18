@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURNINO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat';
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+             font-style: normal;
+        }
+
+        body * {
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+        img,
+        button,
+        input {
+            display: block;
+            text-decoration: none;
+        }
+        /* --navbar-- */
+        /* nav {
+            height: 20px;
+            width: 1550px;
+            background: #FFFFFF;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 35px;
+
+            img {
+                height: 28px;
+                margin-top: px;
+            }
+        }
+
+        .nav1 {
+            width: 40vw;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+            border-bottom: 3px red;
+
+            a {
+                color: #000000;
+                font-weight: 550;
+            }
+        }
+
+        .nav2 {
+            width: 25vw;
+            text-align: center;
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+                color: #000000;
+            }
+        } */
+
+              header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin: auto;
+    padding: 10px 80px;
+    background-color: rgba(255, 255, 255, 1);
+    height: 10vh;
+    
+}
+.fun1{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight:600;
+}
+.nav_ul{
+    display: flex;
+    justify-items: center;
+    gap: 60px;
+    margin-top: 30px;
+    margin-right: 100px;
+    
+}
+.nav_ul li{
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav_icon{
+    display: flex;
+    align-items: center;
+    margin-right: 140px;
+
+   
+}
+.nav_icon img{
+   width: 16px;
+   margin-right: 30px;
+   margin-top: 10px;
+ 
+}
+
+        .del {
+            background-image: url(./picture/scandinavian-interior-mockup-wall-decal-background\ 1.png);
+            height: 780px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+
+            a {
+                color: white;
+            }
+
+            .othertx {
+
+                color: white;
+                line-height: 30px;
+
+            }
+
+
+
+        }
+
+        .text {
+            color: white;
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 140px;
+        }
+
+        .discover {
+            height: 495px;
+            width: 670px;
+            background-color: #FFF3E3;
+            position: absolute;
+            right: 50px;
+            bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .txt {
+            text-align: left;
+            margin-left: 60px;
+
+            button {
+                height: 75px;
+                width: 220px;
+                background-color: #B88E2F;
+                color: white;
+                border: 0px;
+                margin-top: 40px;
+            }
+
+            h1 {
+                line-height: 30px;
+                font-size: 52px;
+                color: #B88E2F;
+            }
+
+            p {
+                margin-top: 60px;
+                color: #333333;
+                font-weight: 600;
+            }
+
+            span {
+                line-height: 30px;
+                color: #333333;
+                font-weight: 600;
+            }
+        }
+
+        .browse {
+            height: 770px;
+            width: 1250px;
+            margin: auto;
+            margin-top: 80px;
+
+        }
+
+        .ins {
+            height: 100px;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 80px;
+
+        }
+
+        .firstpic {
+            height: 520px;
+            display: flex;
+            justify-content: space-evenly;
+            object-fit: contain;
+
+            img {
+                height: 510px;
+            }
+        }
+
+        .din {
+            display: flex;
+            justify-content: space-evenly;
+            height: 40px;
+            width: 1250px;
+            font-size: 15px;
+            font-weight: 500;
+
+        }
+
+        .produts {
+            height: 950px;
+            width: 1250px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+
+        }
+
+        .eight {
+            height: 430px;
+            width: 286px;
+            font-size: 16px;
+            background-color: #F4F5F7;
+
+            b {
+                margin-right: 25px;
+            }
+
+            p {
+                color: #898989;
+            }
+            span{
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+
+
+        }
+
+        .stroke {
+            text-decoration: line-through;
+        }
+
+        .im {
+            height: 290px;
+            background-color: black;
+            background-image: url(./picture/image\ 1.png);
+            background-size: contain;
+        }
+
+        .pic1 {
+            background-image: url(./picture/image\ 2.png);
+            background-size: contain;
+        }
+
+        .pic2 {
+            background-image: url(./picture/image\ 3.png);
+            background-size: contain;
+        }
+
+        .pic3 {
+            background-image: url(./picture/image\ 4.png);
+            background-size: contain;
+        }
+
+        .pic4 {
+            background-image: url(./picture/image\ 9.png);
+            background-size: contain;
+        }
+
+        .pic5 {
+            background-image: url(./picture/image\ 6.png);
+            background-size: contain;
+        }
+
+        .pic6 {
+            background-image: url(./picture/image\ 7.png);
+            background-size: contain;
+        }
+
+        .pic7 {
+            background-image: url(./picture/image\ 8\ \(1\).png);
+            background-size: contain;
+        }
+
+        .eight h2,
+        .eight p,
+        .eight span {
+            margin-left: 18px;
+            color: #3A3A3A;
+        }
+
+        .discount {
+            height: 60px;
+            width: 60px;
+            background-color: #E97171;
+            border-radius: 50%;
+            float: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-right: 30px;
+
+        }
+
+        .showmore {
+            height: 60px;
+            width: 1250px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+
+            button {
+                height: 49px;
+                width: 245px;
+                color: #B88E2F;
+                border: 1px solid #B88E2F;
+                font-size: 17px;
+                font-weight: 700;
+
+            }
+        }
+
+        .fifty {
+            height: 620px;
+            width: 1250px;
+            background-color: #FCF8F3;
+            margin: auto;
+            display: flex;
+            margin-top: 40px;
+
+        }
+
+        .numone {
+            height: 620px;
+            width: 480px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            button {
+                height: 50px;
+                width: 200px;
+                background-color: #B88E2F;
+                font-weight: 600;
+                margin-left: -135px;
+                border: none;
+                margin-top: 30px;
+                color: white;
+            }
+        }
+
+        .numtwo {
+            height: 620px;
+            width: 400px;
+            background-image: url(./picture/Rectangle\ 24.png);
+            background-size: contain;
+            margin-right: 20px;
+        }
+
+        .numthree {
+            height: 620px;
+            width: 430px;
+
+        }
+
+        .inside1 {
+            height: 500px;
+            width: 400px;
+            background-image: url(./picture/chair.png);
+            background-size: contain;
+            justify-items: center;
+            align-content: center;
+
+        }
+
+        .inside2 {
+            height: 120px;
+            width: 400px;
+
+
+
+        }
+
+        .dot-wrapper {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #b8860b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #b8860b;
+            display: flex;
+
+        }
+
+
+        .inactive {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #D8D8D8;
+            display: flex;
+            flex-direction: row;
+            margin-top: 7px;
+
+        }
+
+        .ary {
+            height: 46px;
+            width: 46px;
+            background-color: #D8D8D8;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            left: 120px;
+            top: 80px;
+
+            h1 {
+                padding: 5px;
+                color: #B88E2F;
+                font-weight: 100;
+            }
+
+
+
+
+
+
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            padding: 20px 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 150px;
+            position: relative;
+            top: 420px;
+            left: 20px;
+            height: 120px;
+        }
+
+        .card-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .card-text small {
+            color: #777;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .card-text h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .card-button {
+            background: #c59d5f;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            position: relative;
+            top: 371px;
+            left: 219px;
+            height: 50px;
+            width: 50px;
+
+        }
+
+        .card-button:hover {
+            background: #a8834d;
+        }
+
+        .card-button::before {
+            content: "➝";
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .niro {
+            height: 80px;
+            text-align: center;
+            position: relative;
+            top: 80px;
+
+            h3 {
+                font-weight: normal;
+                font-size: 20px;
+            }
+
+
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            grid-template-areas:
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid1 grid2 grid2 grid2 grid2 grid3 grid3 grid3 grid4 grid4 grid4 grid5 grid5 grid5"
+                "grid6 grid6 grid7 grid7 grid7 grid3 grid3 grid3 grid8 grid8 grid9 grid9 grid9 grid9"
+                "grid6 grid6 grid7 grid7 grid7 grid3 grid3 grid3 grid8 grid8 grid9 grid9 grid9 grid9"
+                "grid6 grid6 grid7 grid7 grid7 grid3 grid3 grid3 grid8 grid8 grid9 grid9 grid9 grid9"
+            ;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .grid img {
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .grid1 img {
+            height: 100%;
+        }
+
+        .grid2 img {
+            height: 80%;
+            position: relative;
+            top: 95px;
+        }
+
+        .grid3 img {
+            height: 60%;
+            position: relative;
+            top: 150px;
+        }
+
+        .grid4 img {
+            height: 80%;
+            position: relative;
+            top: 95px;
+        }
+
+        .grid5 img {
+            height: 100%;
+        }
+
+        .grid6 img {
+            height: 100%;
+        }
+
+        .grid7 img {
+            height: 80%;
+        }
+
+        .grid8 img {
+            height: 100%;
+        }
+
+        .grid9 img {
+            height: 80%;
+            width: 80%;
+        }
+
+
+        .grid1 {
+            grid-area: grid1;
+        }
+
+        .grid2 {
+            grid-area: grid2;
+        }
+
+        .grid3 {
+            grid-area: grid3;
+        }
+
+        .grid4 {
+            grid-area: grid4;
+        }
+
+        .grid5 {
+            grid-area: grid5;
+        }
+
+        .grid6 {
+            grid-area: grid6;
+        }
+
+        .grid7 {
+            grid-area: grid7;
+        }
+
+        .grid8 {
+            grid-area: grid8;
+        }
+
+        .grid9 {
+            grid-area: grid9;
+        }
+     /* --footer-- */
+
+     
+.footer_main{
+    display: flex;
+    margin-left: 120px;
+    gap: 70px;
+
+   
+}
+.footer_main1{
+    margin-top: 75px;
+}
+.footer_main1 p{
+   color: rgba(159, 159, 159, 1);
+    align-items: center;
+    font-size: 16px;
+}
+.footer_main1 h3{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    padding-bottom: 12px;
+}
+
+.foot_boys{
+   margin-top: 65px; 
+}
+
+.foot_boys li{
+     line-height: 60px;
+     color: black;
+     font-size: 16px;
+     
+}
+.list1{
+    font-size: 30px;
+}
+.foot_boys span{
+
+    color:rgba(159, 159, 159, 1);
+    line-height: 40px;  
+}
+.lastfot{
+    font-size: 13px;
+    gap: 12px;
+    display: flex;
+    text-decoration: underline; 
+
+}
+.lastfot1 span{
+   color: black;
+   font-size:14px ;
+   font-weight: 500;
+}
+.line2{
+    width: 80%;
+   justify-content: center;
+   margin-left: 120px;
+}
+.p1{
+    margin-left: 120px;
+    font-size: 13px;
+    font-weight: 700;
+     margin-top: 30px;
+     margin-bottom: 40px;
+}
+footer{
+    border-top: 1px solid black;
+}
+
+
+       
+        
+    </style>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <!-- <nav>
+            <span><img src="./picture/Meubel House_Logos-05.png" alt=""></span>
+            <span style="font-size: 34px; font-weight: bolder; margin-left: -80px; margin-top: -8px;">Furniro</span>
+            <div class="nav1">
+                <span><a href="./home.html">Home</a></span>
+                <span><a href="">Shop </a></span>
+                <span><a href="">About</a></span>
+                <span><a href="">Contact</a></span>
+            </div>
+            <div class="nav2">
+                <span><a href=""><i class="fa-regular fa-user"></i> !</a></span>
+                <span><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></span>
+                <span><a href=""><i class="fa-regular fa-heart"></i></a></span>
+                <span><a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i> </a></span>
+
+            </div>
+        </nav> -->
+
+
+        <div class="fun1">
+            <img src="/furniture_img/Meubel House_Logos-05.png" alt="">
+            <h2>Furniro</h2>
+        </div>
+        <nav>
+            <ul class="nav_ul">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./shop.html"><li>Shop</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </nav>
+        <div class="nav_icon">
+            <a href=""><img src="/furniture_img/humanlog.png" alt=""></a>
+            <a href=""><img src="/furniture_img/searchion.png" alt=""></a>
+            <a href=""><img src="/furniture_img/heart.png" alt=""></a>
+            <a href="./cart.html"><img src="/furniture_img/Vector (8).png" alt=""></a>
+        </div>
+       
+
+    </header>
+    <main>
+        <section>
+              <div class="del">
+            <div class="discover">
+                <div class="txt">
+                    <p>New Arrival</p>
+                    <h1>Discover Our</h1>
+                    <h1>New Collection</h1>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        Ut elit tellus, luctus nec ullamcorper mattis.</span>
+                    <button>BUY NOW</button>
+                </div>
+
+
+            </div>
+        </div>
+        </section>
+        <div class="browse">
+            <div class="ins">
+                <h1 style="text-align: center; font-weight: 700;">Browse The Range</h1>
+                <h3 style="text-align: center; font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</h3>
+
+            </div>
+            <div class="firstpic">
+                <img src="./picture/Mask Group.png" alt="">
+                <img src="./picture/Image-living room.png" alt="">
+                <img src="./picture/Mask Group (1).png" alt="">
+
+            </div>
+            <div class="din">
+                <h2 style="margin-left: px; margin-right: 190px;">Dining</h2>
+                <h2 style="margin-right: 190px;">Living</h2>
+                <h2>Bedroom</h2>
+
+            </div>
+
+        </div>
+        <div class="produts">
+            <div class="eight">
+                <div class="im">
+                    <div class="discount">-30%</div>
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b><span class="stroke">Rp 3.500.000</span></span>
+
+            </div>
+            <div class="eight">
+                <div class="im pic1">
+
+                </div>
+                <h2>Syltherine</h2>
+                <p>Stylish cafe chair</p>
+                <span><b>Rp 2.500.000</b></span>
+            </div>
+            <div class="eight">
+                <div class="im pic2">
+                    <div class="discount">-50%</div>
+                </div>
+                <h2>Lolito</h2>
+                <p>Luxury big sofa</p>
+                <span><b>Rp 7.000.000</b><span class="stroke">Rp 3.500.000</span></span>
+            </div>
+            <div class="eight">
+                <div class="im pic3">
+                    <div class="discount" style="background: #2EC1AC;">New</div>
+                </div>
+                <h2>Respira</h2>
+                <p>Outdoor bar table and stool</p>
+                <span><b>Rp 500.000</b></span>
+            </div>
+            <div class="eight">
+                <div class="im pic4">
+
+                </div>
+                <h2>Grifo</h2>
+                <p>Night lamp</p>
+                <span><b>Rp 1.500.000</b></span>
+
+            </div>
+            <div class="eight">
+                <div class="im pic5">
+                    <div class="discount" style="background: #2EC1AC;">New</div>
+                </div>
+                <h2>Muggo</h2>
+                <p>Small mug</p>
+                <span><b>Rp 150.000</b></span>
+            </div>
+            <div class="eight">
+                <div class="im pic6">
+                    <div class="discount">-50%</div>
+                </div>
+                <h2>Pingky</h2>
+                <p>Cute bed set</p>
+                <span><b>Rp 7.000.000</b><span class="stroke">Rp 3.500.000</span></span>
+            </div>
+            <div class="eight">
+                <div class="im pic7">
+                    <div class="discount" style="background: #2EC1AC;">New</div>
+                </div>
+                <h2>Potty</h2>
+                <p>Minimalist flower pot</p>
+                <span><b>Rp 500.000</b></span>
+
+            </div>
+        </div>
+
+
+        </div>
+        <div class="showmore">
+            <button>Show More</button>
+
+        </div>
+        <div class="fifty">
+            <div class="numone">
+                <h1>50+ Beautiful rooms <br>
+                    inspiration</h1>
+                <p style="color: #616161;">Our designer already made a lot of beautiful <br>
+                    prototipe of rooms that inspire you</p>
+                <button>Explore More</button>
+            </div>
+            <div class="numtwo">
+                <div class="card">
+                    <div class="card-text">
+                        <small>01 —— Bed Room</small>
+                        <h2>Inner Peace</h2>
+                    </div>
+
+                </div>
+                <button class="card-button"></button>
+            </div>
+            <div class="numthree">
+                <div class="inside1">
+                    <div class="ary">
+                        <h1>></h1>
+                    </div>
+                </div>
+                <div class="inside2">
+                    <div class="progress-dots" style=" display: flex; padding-top: 50px; gap: 25px;">
+                        <div class="dot-wrapper">
+                            <div class="dot"></div>
+                        </div>
+                        <div class="inactive"></div>
+                        <div class="inactive"></div>
+                        <div class="inactive"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="niro">
+            <h3>Share your setup with</h3>
+            <h1>#FuniroFURNITURE</h1>
+        </div>
+
+    </main>
+
+    <section class="grid">
+
+        <div class="grid1"><img src="./picture/Rectangle 36.png" alt=""></div>
+        <div class="grid2"><img src="./picture/Rectangle 38.png" alt=""></div>
+        <div class="grid3"><img src="./picture/dd.png" alt=""></div>
+        <div class="grid4"><img src="./picture/bedroom.png" alt=""></div>
+        <div class="grid5"><img src="./picture/Rectangle 45.png" alt=""></div>
+        <div class="grid6"><img src="./picture/cc.png" alt=""></div>
+        <div class="grid7"><img src="./picture/seven.png" alt=""></div>
+        <div class="grid8"><img src="./picture/wall.png" alt=""></div>
+        <div class="grid9"><img src="./picture/kit.png" alt=""></div>
+    </section>
+
+    <footer >
+        <div class="footer_main">
+        <div class="footer_main1">
+        <h3>Furniro.</h3>
+        <p> 400 Univerity Dirve Suite 200 Caral <br>Gables, <br>FL33134 USA</p>
+        </div>
+
+        <div>
+            <ul class="foot_boys">
+                <div >
+                <a href=""><span>Links</span></a>
+                </div>
+                <a href="./index.html"><li>Home</li></a>
+               <a href="./shop.html"> <li>Shop</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul class="foot_boys">
+                <div >
+                <a href=""><span>Help</span></a>
+                </div>
+                <a href=""><li>Payment Options</li></a>
+               <a href=""> <li>Returns</li></a>
+                <a href=""><li>Privacy Policies</li></a>
+                
+            </ul>
+        </div>
+        <div>
+            <ul class="foot_boys">
+                <div >
+                <a href="./blog.html"><span>Newsletter</span></a>
+                </div>
+                <div class="lastfot">
+                <a href=""><span>Enter Your Email Address</span></a>
+                <div class="lastfot1">
+                <a href=""><span>SUBSCRIBE</span></a>
+                </div>
+                </div>
+               
+            </ul>
+        </div>
+    
+    </div>
+    <hr class="line2">
+    <p class="p1">2025 Furniro. All right reverved</p>
+
+
+
+         
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

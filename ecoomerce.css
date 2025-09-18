@@ -18,18 +18,23 @@ a{ text-decoration: none; }
 body{
    font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;
+   font-style: normal;
+   
 }
-
 
 header{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
     margin: auto;
-    padding: 5px 40px;
+    padding: 10px 80px;
     background-color: rgba(255, 255, 255, 1);
-    height: 5vh;
+    height: 10vh;
+   
 }
 .fun1{
     display: flex;
@@ -43,6 +48,8 @@ header{
     display: flex;
     justify-items: center;
     gap: 60px;
+    margin-top: 30px;
+    margin-right: 100px;
     
 }
 .nav_ul li{
@@ -53,6 +60,7 @@ header{
 .nav_icon{
     display: flex;
     align-items: center;
+    margin-right: 140px;
 
    
 }
@@ -63,8 +71,10 @@ header{
  
 }
 /* --Section1-- */
+
 .container1{
     background-color: rgba(249, 241, 231, 1);
+    margin-top: 100px;
 }
 
 .ul-1{
@@ -99,6 +109,9 @@ header{
     font-size: 16px;
     color: rgba(0, 0, 0, 1);
 }
+
+
+
 /* --section2-- */
 
 .container2{
@@ -147,6 +160,7 @@ p{
     color: rgba(159, 159, 159, 1);
 }
 .sp2_img{
+    
    align-items: center;
   
 }
@@ -245,7 +259,7 @@ hr{
    display: flex;
    align-items: center;
    gap: 20px;
-}
+} 
 
 /* --Section4-- */
 
@@ -282,24 +296,18 @@ hr{
 .syt{
      background-color: rgba(244, 245, 247, 1);
      width: 285px;
+      height: 125px;
    margin-top: 0;
-   padding-top: 10px;
-  
+   padding-top: 10px;  
 }
 .syt1{
-     line-height: 5px; 
+     line-height: 10px;  
    padding-left: 20px;
-  padding-bottom: 10px;  
-
+   padding-bottom: 10px;   
+   margin-top: 0;
+   margin-bottom: 30px;
 }
-.sty2{
-    /* margin-right: 140px; */
-    padding-bottom: 10px;
-    display: flex;
-    line-height: 0;
-    margin-top: 0;
-}
-.syt1 span{
+.syt1 h4{
     color: rgba(137, 137, 137, 1);
     font-size: 16px;
 }
@@ -310,16 +318,22 @@ hr{
 }
 .rep{
     display: flex;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 4px;
+    align-items: center; 
+    gap: 20px;
+    line-height: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+   
 }
-.rep span{
+.rep h4{
     font-size: 14px;
     text-decoration: line-through;
+    margin-top: 0;
 }
 .rep h5{
     font-size: 18px;
+    margin-top: 0;
+    padding-bottom: 15px;
 }
 .circle-text2{
      position: relative;
@@ -336,13 +350,16 @@ hr{
     justify-content: center;
 }
 .imgtext2{
-    padding-top: 40px;
+    margin-top: 48px; 
+
+
 }
 .imgtext{
     display: flex;
     align-items: center;
     justify-content: center;
    gap: 30px;
+ margin-bottom: 30px;
 
   
 }
