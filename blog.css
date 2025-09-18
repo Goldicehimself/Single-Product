@@ -65,7 +65,7 @@ body{
 }
 
 .background {
-    background-image: url(/Assets/images/background.png);
+    background-image: url(./HTML/images/background.png);
     height: 250px;
     justify-content: center;
     justify-items: center;
